@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormUsing</title>
+</head>
+<body>
+    <form action="" method="POST" ecntype="multipart/form-data">
+        <!--ecntype="multipart/form-data
+            itu disarankan jika di form kita ada input type file!
+            
+            note: hanya jika method kita = POST-->
+
+        <!--Jika nekat menulis method="GET" bersamaan dengan enctype="multipart/form-data", 
+            browser akan mengabaikan instruksi multipart tersebut dan 
+            otomatis mengubah enkodenya kembali menjadi teks biasa (application/x-www-form-urlencoded). 
+            Alhasil, file yang Anda kirim hanya akan sampai di server dalam bentuk nama filenya saja berupa teks, 
+            bukan file asliny-->
+
+        <!--
+            ACTION = Data ingin dikirim ke mana?
+            METHOD = Data mau dikirim pakai cara apa?
+        -->
+        <label for="user">username</label>
+        <input type="text" id="user" maxlength="8" placeholder="Your Name" required> 
+
+        <br>
+        <label for="password">password</label>
+        <input type="password" id="password" minlengt="6" maxlength="12" required>
+
+        <br>
+        <label for="email">email</label>
+        <input type="email">
+
+        <br>
+        <label for="phone">phone</label>
+        <input type="tel" placeholder="0896-5265-5320" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+
+        <br>
+        <label for="birth">your birth date</label>
+        <input type="date" id="birth" required>
+
+        <br>
+        <label for="num">chose number</label>
+        <input type="number" id="num" min="0" max="99" value="0">
+        <!--Min = mengatur jumlah minimum angka, biasa 0 agar angka tidak bisa menjadi negatif
+            Max = mengatur jumlah maksimum angka
+            Value = mengatur default angka yang di set, hanya sebagai contoh saja, jika ada seseorang yang ingin
+                    default angka yang tampil selain angka 0-->
+
+        <br>
+        <label for="bilek">Pilih yang mana</label><br>
+
+        <label for="suka">Suka</label>
+        <input type="radio" id="suka" value="suka" name="bilek">
+        <label for="senang">Senang</label>
+        <input type="radio" id="senang" value="senang" name="bilek">
+        <label for="setuju">Setuju</label>
+        <input type="radio" id="setuju" value="setuju" name="bilek">
+
+        <br>
+        <label for="apa">Kamu itu apa?</label>
+        <select name="apa" id="apa">
+            <option value="manusia">Manusia</option>
+            <option value="alien">Alien</option>
+        </select>
+
+        <br><br>
+        <label for="kota">Kamu dari kota mana?</label><br>
+        <select name="kota" id="kota">
+            <option value="" disabled>--PILIH KOTAMU--</option>
+            <option value="medan">Medan</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="bandung">Bandung</option>
+        </select>
+
+        <br><br>
+        <label for="prov">Kamu dari provinsi mana?</label><br>
+        <select name="prov" id="prov">
+            <optgroup label="PULAU JAWA">
+                <option value="jateng">Jawa tengah</option>
+                <option value="jatim">Jawa timur</option>
+            </optgroup>
+            <optgroup label="PULAU SUMATERA">
+                <option value="sumut">Sumatera utara</option>
+                <option value="sumbar">Sumatera barat</option>
+                <option value="aceh">Aceh</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <label for="makan">Ceklis jika kamu sudah makan!</label>
+        <input type="checkbox" id="makan">
+        
+        <br><br><br>
+        <label for="fback">Berikan masukanmu!</label><br>
+        <textarea name="feedback" id="fback" rows="9" cols="30"></textarea>
+        <!--Textarea =  elemen formulir yang digunakan untuk menerima masukan teks multi-baris (panjang) 
+            dari pengguna-->
+
+        <!--Rows = menentukan tinggi kotak
+            Cols = menentukan lebar kotak-->
+
+        <br><br><br>
+        <label for="file">Kirim file gambar apapun yang kau miliki padaku!</label>
+        <input type="file" accept="image/png, image/jpeg">
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+
+        <!--Pattern sebenarnya kurang berguna sih untuk telepon, dia memaksakan pengguna harus mengikuti formatnya,
+            Jika saja format tersebut langsung dibentuk saat kita selesai ngeti tanpa mengikuti format,
+            maka itu akan jauh lebih bagus-->
+
+        <!--Placeholder = digunakan untuk menampilkan teks petunjuk atau contoh sementara 
+            di dalam kolom formulir (input atau textarea)-->
+        
+        <!--Required = mewajibkan pengguna mengisi 
+            kolom tertentu pada sebuah formulir sebelum formulir tersebut dapat dikirimkan-->
+
+        <!--Minlength = mengatur minimal huruf yang diketik
+            Maxlength = mengatur batas huruf yang bisa diketik-->
+
+        <!--
+            Ada beberapa jenis type (murni dari HTML):
+            - text = teks biasa
+            - password = kalau ngetik ga bakalan keliatan apa yang kamu ketik
+            - email = memunculkan icon email, hanya di keyboard HP
+            - url = Validasi format URL otomatis saat submit
+            - tel = Di HP munculkan keyboard angka
+            - search = Mirip text, tapi ada tombol × untuk hapus di browser
+            - number = Hanya angka. Ada tombol arrow atas dan bawah disebelah kanan.
+            - range = Slider geser. Nilainya tidak tampil kecuali pakai atribut tambahan, yaitu JS/JavaScript.
+            - date = Muncul kalender untuk pilih tanggal
+            - time = Pilih jam dan menit
+            - datetime-local = Pilih tanggal sekaligus jam dalam satu input
+            - month = Pilih bulan dan tahun saja
+            - checkbox = Bisa pilih lebih dari satu sekaligus (ceklis box)
+            - radio = Hanya bisa pilih satu. Pakai atribut name yang sama (sama, ceklis box)
+            - color = Muncul color picker. Nilainya berupa kode warna (#hex)
+            - file = Upload file dari perangkat pengguna
+            - sumbit = Mengirim semua isian form ke tujuan action
+            - reset = Mengosongkan semua isian form sekaligus
+        -->
+    </form>
+</body>
+</html>
