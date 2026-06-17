@@ -1,0 +1,128 @@
+<!--
+    [TANTANGAN CODE - HTML/CSS #2]
+    [CLIENT: Ketua Komunitas "Komunitas Baca Medan"]
+
+    Halo, selamat siang!
+
+    Saya ketua komunitas membaca buku di Medan, namanya "Komunitas Baca Medan".
+    Saya mau minta dibuatkan halaman pendaftaran untuk member baru kami.
+
+    Di bagian paling atas halaman, tampilkan nama komunitas kami dengan jelas.
+    Di sebelahnya atau di bawahnya, ada menu navigasi dengan 3 pilihan:
+    "Beranda", "Tentang Kami", dan "Kontak". Tidak perlu kemana-mana dulu,
+    yang penting tampilannya ada.
+
+    Di tengah halaman, buat formulir pendaftaran. Formulirnya minta data:
+    - Nama lengkap
+    - Email
+    - Usia
+    - Jenis kelamin (pilihan: Laki-laki atau Perempuan)
+    - Genre buku favorit (pilihan: Fiksi, Non-Fiksi, Fantasi, Sejarah, Sains)
+    - Alasan ingin bergabung (bebas tulis panjang)
+
+    Ada dua tombol di bawah formulir:
+    satu untuk mengirim data, satu lagi untuk mengosongkan semua isian.
+
+    Di bagian paling bawah halaman, taruh tulisan hak cipta komunitas kami
+    dan email kami: komunitasbacamedan@email.com, bisa diklik untuk kirim email.
+
+    Terima kasih!
+-->
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tantanganCode2</title>
+</head>
+<body>
+    <header>
+
+        <div align="center">
+            <h1><span style="background-color:rgb(184, 184, 255)">KOMUNITAS BACA MEDAN</span></h1>
+        </div>
+
+        <br>
+        <div align="center">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kontak</a>
+        </div>
+
+    </header>
+
+    <br><br><hr>
+    <main>
+        <br><br>
+        <div align="center">
+            <h3><span style="background-color:rgb(214, 231, 255)">TEMPAT PENDAFTARAN</span></h3>
+        </div>
+
+        <br><br>
+        <div align="center" style="background-color:rgb(220, 245, 255)">
+            <form action="">
+                <label for="name">Masukkan nama kamu</label><br>
+                <input type="text" id="name" required>
+
+                <br><br><br>
+                <label for="email">Masukkan email kamu</label><br>
+                <input type="email" id="email" required>
+
+                <br><br><br>
+                <label for="usia">Masukkan usia kamu</label><br>
+                <input type="number" id="usia" min="15" max="90" value="15" required>
+
+                <br><br><br>
+                <label>Pilih jenis kelaminmu</label><br><br>
+                <label for="laki">Laki-laki</label><br>
+                <input type="radio" id="laki" value="laki" name="kelamin" required><br>
+                <label for="perempuan">Perempuan</label><br>
+                <input type="radio" id="perempuan" value="perempuan" name="kelamin" required>
+
+                <br><br><br>
+                <label>Genre buku favoritmu</label><br><br>
+                <label for="fiksi">Fiksi</label>
+                <input type="checkbox" id="fiksi" value="fiksi"><br><br>
+                <label for="nonfik">Non-Fiksi</label>
+                <input type="checkbox" id="nonfik" value="non-fiksi"><br><br>
+                <label for="fantasi">Fantasi</label>
+                <input type="checkbox" id="fantasi" value="fantasi"><br><br>
+                <label for="sejarah">Sejarah</label>
+                <input type="checkbox" id="sejarah" value="sejarah"><br><br>
+                <label for="sains">Sains</label>
+                <input type="checkbox" id="sains" value="sains">
+
+                <br><br><br>
+                <label for="alasan">Kenapa kamu ingin mendaftar disini?</label><br><br>
+                <textarea name="alasanku" id="alasan" rows="10" cols="45"></textarea>
+
+                <br><br><br>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+
+    </main>
+
+    <br><br><hr>
+    <footer>
+
+        <br><br>
+        <div>
+            &copy; 2026 Komunitas Baca Medan <br><br>
+            <a href="mailto:komunitasbacamedan@email.com" title="Ayo email kami!">komunitasbacamedan@email.com</a>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+
+
+
+<!--
+    DONE 100% SELESAI | NILAI KESELURUHAN 95/100
+-->
