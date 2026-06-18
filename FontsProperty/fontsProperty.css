@@ -1,0 +1,78 @@
+@font-face{
+    src: url(./fonts/TaiHeritagePro-Bold.ttf);
+    font-family:japanesme;
+    /*font-family disini tugasnya untuk ganti nama font bawaan yang di src.
+      jadi ya kayak ganti nama sendiri, boleh juga ga usah di ganti gpp.
+
+      tapi... font-family itu wajib ada didalam font face, jangan dihapus.
+    */
+
+    /*font face g wajib banget sebenarnya di letak di paling atas,
+      tapi lebih baik letak di paling atas aja, karena untuk deklarasi dan bisa cepat
+      dipakai untuk kebutuhan
+    */
+}
+
+/*CATATAN:
+
+    Kalau mau menambahkan banyak font, harus buat font face satu satu,
+    dan juga satu satu deklarasi nama fontnya.
+
+    Ribet?
+    iya tau, wkwk.
+*/
+
+h1{
+    font-family:verdana, arial;
+    /*Kenapa pakai koma?
+      agar jika web tidak bisa menampilkan font verdana,
+      maka yang akan tampil adalah font arial.*/
+}
+
+#p1{
+    font-family:"lucida console", "courier new";
+    /*Kalau fontnya punya nama yang panjang,
+      kita bisa buat didalam tanda petik nama font tersebut.*/
+    font-size:20px;
+    font-weight:100;
+    /* 1. Nilai Kata Kunci (Keywords) */
+    /* font-weight: normal;   -> Standar (400) */
+    /* font-weight: bold;     -> Tebal (700) */
+    /* font-weight: lighter;  -> Lebih tipis dari elemen induk */
+    /* font-weight: bolder;   -> Lebih tebal dari elemen induk */
+
+    /* 2. Nilai Numerik (Angka) */
+    /* font-weight: 100; -> Thin (Sangat tipis) */
+    /* font-weight: 200; -> Extra Light (Lebih tipis) */
+    /* font-weight: 300; -> Light (Tipis) */
+    /* font-weight: 400; -> Normal / Regular (Standar) */
+    /* font-weight: 500; -> Medium (Sedang) */
+    /* font-weight: 600; -> Semi Bold (Agak tebal) */
+    /* font-weight: 700; -> Bold (Tebal) */
+    /* font-weight: 800; -> Extra Bold (Lebih tebal) */
+    /* font-weight: 900; -> Black / Heavy (Paling tebal) */
+
+    font-style:oblique;
+    /* 1. Nilai Standar (Paling Sering Digunakan) */
+    /* font-style: normal;  -> Teks tegak lurus biasa (default) */
+    /* font-style: italic;  -> Teks miring menggunakan versi font khusus italic */
+    /* font-style: oblique; -> Teks dimiringkan secara paksa oleh browser dari font normal */
+
+    /* 2. Nilai dengan Sudut Kustom (Khusus untuk Variasi Oblique) */
+    /* font-style: oblique 10deg;  -> Miring ke kanan sebesar 10 derajat */
+    /* font-style: oblique -15deg; -> Miring ke kiri sebesar 15 derajat */
+
+    /* 3. Nilai Global */
+    /* font-style: inherit; -> Mengikuti gaya dari elemen induknya */
+    /* font-style: initial; -> Mengembalikan ke pengaturan awal browser */
+    /* font-style: revert;  -> Mengembalikan ke gaya bawaan stylesheet browser */
+}
+
+#p2{
+    font-family:"Tai Heritage Pro";
+    /*ini kalau kita pakai link dari google font bagian link rel*/
+}
+
+#p3{
+    font-family:japanesme;
+}
