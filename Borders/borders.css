@@ -1,0 +1,37 @@
+h1{
+    border-style:inset;
+    /*
+    Daftar jenis border-style di CSS:
+    - none    : Tanpa border
+    - hidden  : Border tersembunyi
+    - solid   : Garis lurus biasa
+    - dashed  : Garis putus-putus
+    - dotted  : Garis titik-titik
+    - double  : Dua garis sejajar
+    - groove  : Efek 3D terukir ke dalam
+    - ridge   : Efek 3D timbul ke luar
+    - inset   : Efek 3D bingkai masuk ke dalam
+    - outset  : Efek 3D bingkai menonjol ke luar
+    */
+
+    border-width:10px;
+    border-color:azure;
+    border-radius:10px;
+}
+
+/*tapi ya... cara itu terlalu panjang bukan?
+  kita bisa menyingkatnya jadi seperti dibawah ini:*/
+#p1{
+    border: 10px outset rgb(191, 245, 255);
+    border-radius:5px;
+    /*Gimana? lebih singkat kan?*/
+}
+
+#p2{
+    border-bottom: 5px solid rgb(255, 212, 255);
+    border-top: 5px solid rgb(255, 212, 255);
+    border-left: 5px dotted rgb(181, 181, 255);
+    border-right: 5px dotted rgb(181, 181, 255);
+
+    border-radius: 5px;
+}
