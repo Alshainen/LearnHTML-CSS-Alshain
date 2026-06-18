@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    text-shadow: 5px 5px 10px red, -5px -5px 10px blue;
+    /*
+        Urutannya:
+        Horizontal, Vertical, Opacity, Warna
+    */
+    color: white;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    box-shadow: 0px 0px 20px grey;
+    /*ini untuk box*/
+}
+
+#lor{
+    box-shadow: 10px 10px 20px rgb(255, 145, 145);
+}
+
+/*
+    Intinya box shadow itu ngikutin sesuai box,
+    dan text shadow ngikutin sesuai text.
+
+    yessir.
+*/
