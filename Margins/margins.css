@@ -1,0 +1,27 @@
+/* Margin adalah ruang kosong di luar elemen HTML.
+   margin = jarak antara kotak itu dengan elemen lain di sekitarnya
+*/
+
+.r{
+    border: 3px solid;
+    height: 100px;
+    width: 100px;
+    font-size: 15px;
+    margin: auto;
+}
+
+#d1{
+    background-color: red;
+    margin-left: 500px;
+}
+
+#d2{
+    background-color: blue;
+    margin-top: -45px;
+}
+
+/* 
+   margin: auto menyesuaikan ruang yang tersedia, jadi cocok untuk bikin elemen tetap di posisi relatif,
+   biasanya di tengah secara horizontal.
+   Kalau margin manual, jaraknya tetap dan tidak ikut menyesuaikan saat ukuran web berubah.
+*/
