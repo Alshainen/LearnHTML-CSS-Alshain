@@ -1,0 +1,49 @@
+/*
+Untuk warna kita bisa menggunakan:
+- Nama warna (kayak "Red")
+- RGB value's
+- Hexadecimal value's
+- HSL & HSLA value's
+*/
+
+body{
+    background-color:azure;
+}
+
+#p1{
+    color:crimson;
+    /*ini pakai nama untuk warna*/
+}
+
+#p2{
+    color:rgb(0, 89, 255);
+    /*ini pakai rgb value's untuk warna*/
+}
+
+#p3{
+    color:#452;
+    /*ini pakai hex value's untuk warna
+      hex selalu diawali dengan hastag sebelum something*/
+}
+
+#p4{
+    color:hsla(297, 100%, 61%, 0.885);
+    /*ini pakai hsl atau hsla value's untuk warna*/
+}
+
+/*
+    Sebenarnya kalau kita pakai code editor kayak VSCode,
+    kita tinggal ketik icon kotak disamping warna aja,
+    klik pada bagian atas untuk mau ganti jadi tipe warna apapun.
+
+    jadi misal trigger pakai nama warna, klik kotak untuk pilih warna sebenarnya
+    yang kita inginkan.
+
+    ya kira-kira begitu lah.
+*/
+
+/*
+    Dan juga sebenarnya ada type lain yang bisa kita gunakan selain yang diatas,
+    jadi ya, cari-cari sendiri juga bisa dengan mengklik bagian atas di
+    tab color.
+*/
