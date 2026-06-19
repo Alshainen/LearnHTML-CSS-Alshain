@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    background-color: #F5F0E8;
+}
+
+#header-box{
+    padding: 60px 20px 30px;
+    background-color: #1A1A2E;
+    text-align: center;
+}
+
+.header-text{
+    margin: 0;
+}
+
+#header-judul{
+    margin: 0;
+    font-size: 45px;
+    color: white;
+}
+
+#header-subjudul{
+    margin: 17px 0 0;
+    color: #A0A8C0;
+}
+
+.header-a{
+    display: inline-block;
+    margin: 24px 15px 7px;
+    text-decoration: none;
+    color: #C9A84C;
+}
+
+.main-box{
+    display: flow-root;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 15px hsl(0, 2%, 70%);
+    background-color: white;
+}
+
+#main-profilebox{
+    float: left;
+    margin: 30px;
+    width: 13em;
+    height: 13em;
+    border: 3px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 10px hsl(0, 5%, 30%);
+    background-color: transparent;
+}
+
+#main-judulprofile{
+    font-size: 25px;
+    margin: 25px 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C9A84C;
+}
+
+.main-bio{
+    margin: 25px 30px;
+}
+
+#main-tablebox{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#main-judultable{
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: solid 5px #C9A84C;
+    font-size: 23px;
+    font-family: "Noto Serif", serif;
+}
+
+#main-table{
+    width: 100%;
+    height: 190px;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px hsl(0, 2%, 70%);
+    background-color: #3c3c3f;
+    color: white;
+}
+
+.main-isitable{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.main-tablespace{
+    border: 1px solid #dfdfdf;
+    padding-left: 15px;
+}
+
+.main-tablespacebg{
+    border: 1px solid #3c3c3f;
+    background-color: #1A1A2E;
+}
+
+#main-hobi{
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: solid 5px #C9A84C;
+    font-size: 23px;
+    font-family: "Noto Serif", serif;
+    font-weight: 600;
+}
+
+.main-isihobi{
+    margin: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-hobibox{
+    margin: 30px 0;
+}
+
+#footer-box{
+    padding: 50px;
+    width: auto;
+    height: auto;
+    background-color: #1A1A2E;
+}
+
+.footer-text{
+    margin-top: -10px;
+    text-align: center;
+    color: #A0A8C0;
+}
+
+.footer-a{
+    display: inline-block;
+    margin: 25px 13px 0;
+    text-decoration: none;
+    color: #C9A84C;
+}
