@@ -1,0 +1,143 @@
+/*
+OVERFLOW DI CSS
+
+overflow adalah properti CSS untuk mengatur apa yang terjadi ketika isi elemen
+lebih besar dari area kotaknya (box) — misalnya teks kepanjangan, gambar terlalu besar,
+atau konten melewati ukuran width/height yang sudah ditentukan.
+
+JENIS-JENIS OVERFLOW:
+
+1. visible
+   - Nilai default.
+   - Konten yang berlebih tetap ditampilkan keluar dari box.
+   - Tidak dipotong.
+
+2. hidden
+   - Konten yang berlebih disembunyikan.
+   - Bagian yang keluar dari box tidak terlihat.
+
+3. scroll
+   - Konten yang berlebih disembunyikan, tapi scrollbar selalu muncul.
+   - Baik isi benar-benar berlebih maupun tidak.
+
+4. auto
+   - Mirip scroll, tapi scrollbar hanya muncul jika memang diperlukan.
+   - Ini yang paling sering dipakai.
+
+5. clip
+   - Konten dipotong seperti hidden, tetapi lebih ketat.
+   - Konten yang keluar tidak bisa di-scroll.
+
+CATATAN:
+- overflow bisa dipakai untuk mengontrol isi elemen saat ukurannya terbatas.
+- Bisa juga diatur per sumbu:
+  - overflow-x = arah horizontal
+  - overflow-y = arah vertikal
+*/
+
+div{
+   font-size: 30px;
+    border: 3px solid;
+    width: 500px;
+    height: 100px;
+    overflow: visible;
+
+    /*
+    1. visible
+   - Nilai default.
+   - Konten yang berlebih tetap ditampilkan keluar dari box.
+   - Tidak dipotong.
+   */
+}
+
+h2{
+   margin-top: 200px;
+   font-size: 30px;
+   border: 3px solid;
+   width: 500px;
+   height: 100px;
+   overflow: hidden;
+
+   /*
+   2. hidden
+   - Konten yang berlebih disembunyikan.
+   - Bagian yang keluar dari box tidak terlihat.
+   */
+
+   /*
+   overflow: hidden = konten dipotong, tapi elemen masih bisa dianggap 
+   area scroll.
+   */
+}
+
+h3{
+   margin-top: 100px;
+   font-size: 30px;
+   border: 3px solid;
+   width: 500px;
+   height: 100px;
+   overflow: scroll;
+
+   /*
+   3. scroll
+   - Konten yang berlebih disembunyikan, tapi scrollbar selalu muncul.
+   - Baik isi benar-benar berlebih maupun tidak.
+   */
+}
+
+h4{
+   margin-top: 100px;
+   font-size: 30px;
+   border: 3px solid;
+   width: 500px;
+   height: 100px;
+   overflow: auto;
+
+   /*
+   4. auto
+   - Mirip scroll, tapi scrollbar hanya muncul jika memang diperlukan.
+   - Ini yang paling sering dipakai.
+   */
+   
+   /*
+   Auto menyelesaikan semua masalahmu, wkwk
+   */
+}
+
+h5{
+   margin-top: 100px;
+   font-size: 30px;
+   border: 3px solid;
+   width: 500px;
+   height: 100px;
+   overflow: hidden;
+
+   /*
+   5. clip
+   - Konten dipotong seperti hidden, tetapi lebih ketat.
+   - Konten yang keluar tidak bisa di-scroll.
+   */
+
+   /*
+   overflow: clip = konten dipotong juga, tapi tidak membuat scroll container.
+   */
+}
+
+
+/*
+Catatan untuk "CLIP" dan "HIDDEN": 
+keduanya tetap menyimpan isi teks lengkap di HTML, jadi saat disalin,
+teks yang ter-copy biasanya tetap seluruh isi, bukan hanya yang terlihat.
+*/
+
+/*
+overflow: hidden
+Isi yang lewat batas dipotong dan scrollbar tidak muncul.
+Secara teknis elemen ini masih dianggap punya kemampuan scroll internal, 
+jadi bisa dipindah lewat JavaScript atau fokus tertentu.
+
+overflow: clip
+Isi yang lewat batas dipotong juga, 
+tapi lebih ketat: elemen ini bukan scroll container sama sekali. 
+Jadi benar-benar tidak bisa diperlakukan seperti area scroll.
+*/
