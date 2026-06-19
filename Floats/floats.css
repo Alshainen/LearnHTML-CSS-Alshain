@@ -1,0 +1,88 @@
+body{
+    border: 3px solid;
+    display: flow-root;
+    /*display: flow-root; dipakai untuk membuat elemen membentuk konteks layout baru 
+      sehingga isi di dalamnya tidak “bocor” keluar secara visual, terutama untuk masalah float.*/
+
+    /* ADA BEBERAPA JENIS DISPLAY:*/
+    /* ==============================
+       CSS - NILAI DISPLAY
+       ============================== */
+
+    /* --- YANG PALING SERING DIPAKAI --- */
+
+    /* display: block;
+       Elemen makan satu baris penuh (lebar 100%).
+       Elemen berikutnya otomatis turun ke bawah.
+       Contoh bawaan: <div>, <p>, <h1> */
+
+    /* display: inline;
+       Elemen hanya selebar isinya, ga turun ke baris baru.
+       TIDAK bisa diatur width/height-nya.
+       Contoh bawaan: <span>, <a>, <strong> */
+
+    /* display: inline-block;
+       Gabungan block + inline.
+       Ga turun ke baris baru, TAPI bisa diatur width/height-nya.
+       Cocok buat tombol, badge, dll. */
+
+    /* display: none;
+       Elemen disembunyiin sepenuhnya.
+       Ga makan tempat, seolah-olah ga ada di halaman. */
+
+    /* display: flex;
+       Elemen anak bisa diatur posisinya secara fleksibel
+       (kiri-kanan, atas-bawah, rata tengah, dll).
+       Paling umum dipakai buat layout modern. */
+
+    /* display: inline-flex;
+       Sama kayak flex, tapi elemennya sendiri berlaku kayak inline
+       (ga makan satu baris penuh). */
+
+    /* display: grid;
+       Elemen anak diatur dalam sistem kolom dan baris (kayak tabel tapi lebih powerful).
+       Cocok buat layout halaman yang kompleks. */
+
+    /* display: inline-grid;
+       Sama kayak grid, tapi elemennya sendiri berlaku kayak inline. */
+
+    /* --- JARANG DIPAKAI TAPI ADA --- */
+
+    /* display: table;
+       Bikin elemen berperilaku kayak <table>.
+       Jarang dipakai karena sekarang udah ada flex dan grid. */
+
+    /* display: table-row;
+       Bikin elemen berperilaku kayak <tr> (baris tabel). */
+
+    /* display: table-cell;
+       Bikin elemen berperilaku kayak <td> (sel tabel). */
+
+    /* display: list-item;
+       Elemen jadi kayak <li>, muncul bullet/nomornya. */
+
+    /* display: contents;
+       Elemen itu sendiri "menghilang" dari layout,
+       tapi elemen anaknya tetap kelihatan dan aktif.
+       Berguna buat kasus flex/grid tertentu. */
+
+    /* display: flow-root;
+       Mirip block, tapi bikin "kontainer baru" yang
+       mencegah float bocor keluar (clearfix modern). */
+}
+
+#a{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#b{
+    width: 200px;
+    float: right;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
