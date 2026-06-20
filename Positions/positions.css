@@ -1,0 +1,107 @@
+/*
+POSITION di CSS
+
+position adalah properti untuk mengatur posisi elemen di halaman.
+
+static
+- posisi default
+- elemen mengikuti alur normal dokumen
+- top, right, bottom, left tidak berpengaruh
+
+relative
+- elemen tetap berada di posisi aslinya
+- tetapi bisa digeser dari posisi tersebut
+- ruang asli elemen tetap ada
+
+absolute
+- elemen keluar dari alur normal
+- posisinya mengikuti parent terdekat yang punya position selain static
+- kalau tidak ada, referensinya adalah halaman
+- elemen lain tidak menghitung ruang untuk elemen ini
+
+fixed
+- elemen diposisikan relatif terhadap viewport
+- tetap di tempat meskipun halaman di-scroll
+- cocok untuk elemen yang harus selalu terlihat
+
+sticky
+- gabungan relative dan fixed
+- elemen bergerak normal dulu
+- lalu menempel saat scroll sudah mencapai titik tertentu
+
+CATATAN
+- top, right, bottom, left hanya berfungsi jika position bukan static
+*/
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+    /*
+    relative
+    - elemen tetap berada di posisi aslinya
+    - tetapi bisa digeser dari posisi tersebut
+    - ruang asli elemen tetap ada
+    */
+    
+    left: 250px;
+}
+
+#fix{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: fixed;
+    /*
+    fixed
+    - elemen diposisikan relatif terhadap viewport
+    - tetap di tempat meskipun halaman di-scroll
+    - cocok untuk elemen yang harus selalu terlihat
+    */
+    
+    right: 100px;
+}
+
+#abs{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+    left: 100px;
+}
+
+#abs2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 127, 127);
+    position: absolute;
+    /*
+    absolute
+    - elemen keluar dari alur normal
+    - posisinya mengikuti parent terdekat yang punya position selain static
+    - kalau tidak ada, referensinya adalah halaman
+    - elemen lain tidak menghitung ruang untuk elemen ini
+    */
+
+    left: 10px;
+    top: 70px;
+}
+
+#sti{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 225, 127);
+    position: sticky;
+    top: 0;
+    left: 300px;
+    /*
+    sticky
+    - gabungan relative dan fixed
+    - elemen bergerak normal dulu
+    - lalu menempel saat scroll sudah mencapai titik tertentu
+    */
+}
+
+
+/* STATIC ITU DEFAULT POSISI, JADI BUAT HEMAT WAKTU, W SKIP BUATNYA YA, WKWK */
