@@ -1,0 +1,73 @@
+/* 
+display = property CSS yang mengatur cara sebuah elemen ditampilkan di halaman.
+
+block-level:
+- mulai di baris baru
+- mengambil lebar penuh yang tersedia
+- contoh: h1, div, p, form, header, footer
+
+inline:
+- tidak mulai di baris baru
+- lebarnya hanya sebesar isi kontennya
+- contoh: span, a, img
+*/
+
+
+#a{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 183, 183);
+    display: block;
+    /*basicnya ini udah block elemen*/
+}
+
+#b{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background-color: rgb(255, 255, 196);
+    /*saat block diubah ke inline, maka dia akan menjadi inline elemen seperti
+      teks pada umumnya*/
+}
+
+#c{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background-color: rgb(182, 255, 182);
+    /*basicnya ini udah inline elemen
+      saat inline, maka ga akan bisa menggunakan width dan height untuk
+      mengatur elemennya*/
+}
+
+#d{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: rgb(211, 211, 255);
+    /*saat inline elemen menjadi block, maka pengaturan ukuran akan bisa digunakan
+      pada elemen tersebut*/
+}
+
+#d2{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+#b2{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    background-color: cornsilk;
+}
+
+/* Saat menggunakan elemen inline-block,
+   maka itu artinya kita sedang menggunakan 2 jenis elemen sekaligus.
+
+   Yang artinya elemen tersebut akan bisa diedit ukurannya, dan juga akan bisa
+   masuk ke jejeran teks biasa (tidak membuat baris baru) */
+
+/* Ukuran disini maksudnya adalah ukuran elemen seperti box ya, bukan teks.
+   Teks nya bisa lu edit pakai font-size jir... */
