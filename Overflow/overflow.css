@@ -98,7 +98,7 @@ h4{
    - Mirip scroll, tapi scrollbar hanya muncul jika memang diperlukan.
    - Ini yang paling sering dipakai.
    */
-   
+
    /*
    Auto menyelesaikan semua masalahmu, wkwk
    */
@@ -110,7 +110,7 @@ h5{
    border: 3px solid;
    width: 500px;
    height: 100px;
-   overflow: hidden;
+   overflow: clip;
 
    /*
    5. clip
@@ -125,7 +125,7 @@ h5{
 
 
 /*
-Catatan untuk "CLIP" dan "HIDDEN": 
+Catatan untuk "CLIP" dan "HIDDEN":
 keduanya tetap menyimpan isi teks lengkap di HTML, jadi saat disalin,
 teks yang ter-copy biasanya tetap seluruh isi, bukan hanya yang terlihat.
 */
@@ -133,11 +133,11 @@ teks yang ter-copy biasanya tetap seluruh isi, bukan hanya yang terlihat.
 /*
 overflow: hidden
 Isi yang lewat batas dipotong dan scrollbar tidak muncul.
-Secara teknis elemen ini masih dianggap punya kemampuan scroll internal, 
+Secara teknis elemen ini masih dianggap punya kemampuan scroll internal,
 jadi bisa dipindah lewat JavaScript atau fokus tertentu.
 
 overflow: clip
-Isi yang lewat batas dipotong juga, 
-tapi lebih ketat: elemen ini bukan scroll container sama sekali. 
+Isi yang lewat batas dipotong juga,
+tapi lebih ketat: elemen ini bukan scroll container sama sekali.
 Jadi benar-benar tidak bisa diperlakukan seperti area scroll.
 */

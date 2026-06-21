@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ObjectFit</title>
+  <link rel="stylesheet" href="objectFit.css" />
+</head>
+<body>
+  <h1>Contoh Semua object-fit</h1><br>
+  <div class="grid">
+    <div class="card">
+      <h2>fill</h2>
+      <div class="box">
+        <img src="./img/714740.png" alt="Contoh fill" class="fit-fill">
+      </div>
+      <p>Mengisi kotak penuh, bisa merenggang.</p>
+    </div>
+
+    <div class="card">
+      <h2>contain</h2>
+      <div class="box">
+        <img src="./img/714740.png" alt="Contoh contain" class="fit-contain">
+      </div>
+      <p>Seluruh gambar terlihat, proporsi tetap.</p>
+    </div>
+
+    <div class="card">
+      <h2>cover</h2>
+      <div class="box">
+        <img src="./img/714740.png" alt="Contoh cover" class="fit-cover">
+      </div>
+      <p>Kotak penuh, sebagian gambar bisa terpotong.</p>
+    </div>
+
+    <div class="card">
+      <h2>none</h2>
+      <div class="box">
+        <img src="./img/714740.png" alt="Contoh none" class="fit-none">
+      </div>
+      <p>Ukuran asli gambar dipakai.</p>
+    </div>
+
+    <div class="card">
+      <h2>scale-down</h2>
+      <div class="box">
+        <img src="./img/714740.png" alt="Contoh scale-down" class="fit-scaledown">
+      </div>
+      <p>Memilih hasil paling kecil antara none dan contain.</p>
+    </div>
+  </div>
+</body>
+</html>
