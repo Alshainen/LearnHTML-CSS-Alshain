@@ -271,3 +271,38 @@ footer{
     color: #00c8ff;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .header-navigation {
+        margin-left: 10px;
+        float: right;
+        font-size: 12px;
+    }
+
+    #main-isi {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #main-isi-kiri {
+        width: 100%;
+    }
+
+    #main-sisi-kanan {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .main-isi-box {
+        width: calc(50% - 15px);
+        max-width: 100%;
+        margin-right: 15px;
+    }
+
+    .main-isi-topik {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}

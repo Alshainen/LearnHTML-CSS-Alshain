@@ -1,0 +1,9 @@
+body{
+    background-image: url(./img/a.jpg);
+    background-repeat: no-repeat; /*Ini agar background ga repeat*/
+    background-position: center; /*Ini agar background berada ditengah*/
+    background-attachment: fixed; /*Untuk menentukan apakah gambar latar belakang 
+                                    (background) akan ikut bergerak atau diam 
+                                    (terkunci) saat halaman di-scroll*/
+    background-size: cover; /*Ini agar background mengikuti layar ukurannya*/
+}
