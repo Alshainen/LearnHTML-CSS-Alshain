@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="combinators.css">
+</head>
+<body>
+    <!--
+    COMBINATORS = menjelaskan hubungan antar selector
+    div p        (spasi) = descendant   → semua <p> di dalam div, berapapun dalamnya
+    div > p      (>)     = child        → hanya <p> yang LANGSUNG anak dari div
+    div ~ p      (~)     = general sibling  → semua <p> yang jadi saudara div (setelah div, level sama)
+    div + p      (+)     = adjacent sibling → hanya <p> pertama tepat setelah div (level sama)
+    -->
+
+    <!-- SEMUA CHILDREN ADALAH DESCENDANT, TAPI TIDAK SEMUA DESCENDANT ADALAH CHILDREN -->
+
+    <p>INI JUDUL</p>
+
+    <div id="aku">
+        <p>Ini aku 1</p>
+        <p>Ini aku 2</p>
+        <p>Ini aku 3</p>
+
+        <div>
+            <p>Ini aku 4</p>
+        </div>
+    </div>
+
+    <div id="lu">
+        <p>Ini aku 1</p>
+        <p>Ini aku 2</p>
+        <p>Ini aku 3</p>
+
+        <div>
+            <p>Ini aku 4</p>
+        </div>
+    </div>
+
+    <div id="gw">
+        <p>Ini aku 1</p>
+        <p>Ini aku 2</p>
+        <p>Ini aku 3</p>
+
+        <div>
+            <p>Ini aku 4</p>
+        </div>
+    </div>
+    <p>Ini aku 5</p>
+    <p>Ini aku 6</p>
+
+    <div id="kita">
+        <p>Ini aku 1</p>
+        <p>Ini aku 2</p>
+        <p>Ini aku 3</p>
+
+        <div>
+            <p>Ini aku 4</p>
+        </div>
+    </div>
+    <p>Ini aku 5</p>
+    <p>Ini aku 6</p>
+</body>
+</html>

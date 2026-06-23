@@ -1,0 +1,95 @@
+/*
+  COMBINATORS = menjelaskan hubungan antar selector
+
+  div p        (spasi) = descendant       - semua <p> di dalam div, berapapun dalamnya
+  div > p      (>)     = child            - hanya <p> yang LANGSUNG anak dari div
+  div ~ p      (~)     = general sibling  - semua <p> saudara div setelahnya (level sama)
+  div + p      (+)     = adjacent sibling - hanya <p> pertama tepat setelah div (level sama)
+*/
+
+/* SEMUA CHILDREN ADALAH DESCENDANT, TAPI TIDAK SEMUA DESCENDANT ADALAH CHILDREN*/
+
+#aku{
+    margin-bottom: 10px;
+    border: 3px solid;
+}
+
+#aku p{ /*ini descendant*/
+    background-color: yellow;
+}
+
+/* ini bisa terjadi karena p didalam div id aku,
+   jadi semua keturunan, cucu juga kena.
+   Intinya semua yang ada didalam id itu akan kena,
+   dan bisa di targetkan juga khusus untuk element
+   jenis apa yang kita mau.
+
+   kurang guna sih menurutku...
+   tapi ya masih kepakai, dan sering juga dipakai
+   oleh orang lain.
+
+   cuman untuk aku... gtw sih kedepannya gimana */
+
+/*=================================================*/
+
+
+#lu{
+    margin-bottom: 10px;
+    border: 3px solid;
+}
+
+#lu > p{ /*ini child*/
+    background-color: red;
+}
+
+/* kenapa cuman yang 1-3 aja yang kena?
+   padahal 4 juga masuk didalam div itu?
+
+   jawabannya karena child hanya mempengaruhi
+   anak kandung langsung aja.
+   Sedangkan nomor 4, dia berada didalam div lainnya.
+
+   ya intinya nomor 4 ga kena efek, karena dia bukan
+   anak kandung dari id tersebut. */
+
+/*=================================================*/
+
+#gw{
+    margin-bottom: 10px;
+    border: 3px solid;
+}
+
+#gw ~ p{ /*ini general-sibling*/
+    color: white;
+    background-color: green;
+}
+
+/* kenapa yang kena malah diluar dari id itu?
+   karena element yang didalam id bukanlah element yang sejajar.
+   element p didalam id itu child, sedangkan general sibling adalah
+   yang mengambil element yang sejajar dengannya.
+
+   intinya bukan ambil yang didalam, tapi yang sejajar.
+   catatan, cuman ngaruh dari id target ke bawah ya,
+   yang diatasnya ga akan kena. */
+
+/*=================================================*/
+
+#kita{
+    border: 3px solid;
+}
+
+#kita + p{ /*ini adjacent sibling*/
+    background-color: blue;
+}
+
+/* bedanya dari general sibling tadi jelas,
+   yang kena cuman anak pertama aja.
+
+   jadi hanya p pertama dibawah id lah yang kena,
+   seterusnya tidak.
+
+   CATATAN, adjacent sibling masih bisa kena pengaruh
+   dari general sibling.
+   jadi dia ga sepenuhnya berdiri sendiri,
+   hati-hati kalau punya general sibling diatasnya ya */
