@@ -1,0 +1,69 @@
+button{
+    font-size: 30px
+}
+
+button:hover{
+    font-size: 50px;
+    color: red;
+}
+
+button:active{
+    background-color: blueviolet;
+}
+
+a:link{ /*Pakai :link biar terbiasa,
+          soalnya "a" itu bukan cuman untuk href aja...
+
+          Ga juga sih, ga guna lagian,
+          cuman kebiasaan orang dulu, sekarang mah bodoamat*/
+    font-size: 30px;
+    color: black;
+}
+
+a:hover{ /*Hover itu saat kursor sedang berada di target*/
+    font-size: 50px;
+    color: yellow;
+}
+
+a:active{ /*Saat di klik*/
+    color: brown;
+}
+
+a:visited{  /*ini fitur dongo banget jir, dia visited
+              diliat dari history web lu, bukan cache web yang sedang
+              dikunjungi.
+
+              Jadi mau lu belum pernah klik link nya,
+              selagi lu pernah buka tuh web dari aktivitas lain diluar web itu
+              maka ya tetap aja termasuk visited.
+
+              dongo jir yang buat*/
+
+    color: aqua;
+}
+
+li{
+    width: 7%;
+}
+
+li:hover{ /*Ini berguna untuk highlight list yang ditarget sih.*/
+    color: yellow;
+    background-color: grey;
+}
+
+li:nth-child(3){ /*Menargetkan anak keberapa yang dipilih,
+                   berguna sih, gw juga sering pakai di web
+
+                   Bisa juga dengan selain angka:
+                   - odd = semua yang ganjil
+                   - even = semua yang genap
+
+                   atau kalau mau narget tiap urutan keberapa,
+                   bisa pakai n diakhir:
+                   - 3n = tiap baris ke 3 bakalan kena
+
+                   kalau mau narget dari mana mulainya, bisa pakai +:
+                   - 3n+1 = mulai dari baris pertama, tiap 3 baris dari pertama
+                            akan dipilih*/
+    color: red;
+}
