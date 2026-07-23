@@ -1,0 +1,22 @@
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    padding: 20px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.pagination a.pagination-active{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+}
+
+.pagination a:hover:not(.pagination-active){
+    color: white;
+    background-color: blueviolet;
+}
