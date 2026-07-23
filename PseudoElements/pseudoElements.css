@@ -1,0 +1,52 @@
+h1::first-letter{ /*Ini mengubah huruf pertama*/
+    font-size: 100px;
+    color: red;
+}
+
+p::first-line{ /*Ini mengubah baris pertama.
+                 Catatan: Absolute baris pertama,
+                          jadi kalau kalimat lu menyesuaikan wideview,
+                          maka ya first line nya akan berubah ubah.akhir
+
+                          ini cocok jika ukuran dan posisinya sudah tetap,
+                          dan tidak akan berubah-ubah*/
+    color: yellow;
+    background-color: grey;
+}
+
+p::selection{ /*Normal dari selection itu background blue dan color white,
+                nah kita bisa merubahnya sesuai dengan yang kita mau dengan
+                pseudo element ini.*/
+    color: blue;
+    background-color: greenyellow;
+}
+
+li:nth-child(1):before{ /*Sebelum element*/
+    content: "✅"; /*Bisa juga kosong kalau mau edit sesuatu*/
+}
+
+li:nth-child(1)::after{ /*Setelah element*/
+    content: "1️⃣";
+}
+
+li:nth-child(2)::marker{ /*Jika igin mengganti marker di li (selain dengan pilih
+                           style sendiri di li html nya langsung)*/
+    content: "😂";
+}
+
+/*Ini adalah cara membuat garis di kanan dan kiri element yang diinginkan.*/
+#hi::before, #hi::after{
+    content: "";
+    height: 20px;
+    flex: 1;
+}
+
+.hi{ /*Ini wajib ada, display flex wajib dipakai agar flex 1 befungsi.
+       Align items wajib digunakan agar elementnya sejajar dengan garis kanan kiri.*/
+    display: flex;
+    align-items: center;
+}
+
+.hi::before, .hi::after{
+    background-color: blue;
+}
