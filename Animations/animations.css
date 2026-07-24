@@ -1,0 +1,263 @@
+.don-quixote-meme1{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    /*ada juga animation-direction yang terdiri dari:
+      normal, reverse, alternate, alternate-reverse
+
+      normal: default, animasi berjalan dari awal ke akhir
+      reverse: animasi berjalan dari akhir ke awal
+      alternate: animasi berjalan dari awal ke akhir, 
+                 lalu dari akhir ke awal, dan seterusnya
+      alternate-reverse: animasi berjalan dari akhir ke awal, 
+                         lalu dari awal ke akhir, dan seterusnya.
+    */
+
+    /*ada juga animation-play-state yang terdiri dari:
+      running: default, animasi berjalan
+      paused: animasi berhenti
+
+      ini itu berguna untuk code javascript, atau pseudo element,
+      misal kita ingin animasi berhenti ketika mouse hover atau yang lainnya.
+    */
+
+    /*ada juga animation-timing-function yang terdiri dari:
+      linear: default, animasi berjalan dengan kecepatan konstan
+      ease: animasi berjalan dengan kecepatan awal lambat, 
+            lalu cepat di tengah, dan lambat di akhir
+      ease-in: animasi berjalan dengan kecepatan awal lambat, 
+               lalu cepat di akhir
+      ease-out: animasi berjalan dengan kecepatan awal cepat, 
+                lalu lambat di akhir
+      ease-in-out: animasi berjalan dengan kecepatan awal lambat, 
+                   lalu cepat di tengah, dan lambat di akhir.
+    */
+}
+
+.don-quixote-meme2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme3{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme4{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme5{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme6{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-skew;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme7{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-shrink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme8{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme9{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme10{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-fade-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme11{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-color-change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.don-quixote-meme12{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    animation-name: don-quixote-glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes don-quixote-right {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes don-quixote-left {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes don-quixote-up {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes don-quixote-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes don-quixote-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes don-quixote-skew {
+    from {
+        transform: skew(0deg, 0deg);
+    }
+    to {
+        transform: skew(20deg, 20deg);
+    }
+}
+
+@keyframes don-quixote-shrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes don-quixote-grow {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes don-quixote-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes don-quixote-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes don-quixote-color-change {
+    20% {
+        border-color: yellow;
+    }   
+    40% {
+        border-color: red;
+    }
+    60% {
+        border-color: blue;
+    }
+    80% {
+        border-color: green;
+    }
+    100% {
+        border-color: black;
+    }
+}
+
+@keyframes don-quixote-glow{
+    50% {
+        box-shadow: 0 0 20px red;
+    }
+}
